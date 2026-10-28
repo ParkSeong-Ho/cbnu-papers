@@ -1,0 +1,96 @@
+{
+  "card": {
+    "border-radius": "0px",
+    "box-shadow": "none",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(44, 44, 43)",
+    "padding": "0px",
+    "width": "260px",
+    "display": "block"
+  },
+  "cardShells": [],
+  "texts": [],
+  "groupHeader": {
+    "font-size": "16px",
+    "font-weight": "400",
+    "color": "rgb(44, 44, 43)",
+    "padding": "0px"
+  },
+  "boardGap": {
+    "gap": "normal",
+    "column-gap": "normal"
+  },
+  "bookmark": {
+    "border": "0px none rgb(44, 44, 43)",
+    "border-radius": "0px",
+    "padding": "0px",
+    "box-shadow": "none"
+  },
+  "quote": {
+    "border-left": "3px solid rgb(44, 44, 43)",
+    "padding-left": "14px",
+    "font-size": "16px"
+  },
+  "code": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "0px",
+    "padding": "0px",
+    "font-family": "ui-sans-serif, -apple-system, \"system-ui\", \"Segoe UI Variable Display\", \"Segoe UI\", Helvetica, \"Apple Color Emoji\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "font-size": "14px"
+  },
+  "h1": {
+    "font-size": "30px",
+    "font-weight": "600",
+    "line-height": "39px",
+    "margin-top": "0px"
+  },
+  "h1wrap": {
+    "margin-top": "0px",
+    "padding-top": "0px"
+  },
+  "h2": {
+    "font-size": "24px",
+    "font-weight": "600",
+    "line-height": "31.2px"
+  },
+  "tabActive": [
+    {
+      "font-size": "14px",
+      "font-weight": "500",
+      "color": "rgb(44, 44, 43)",
+      "border-bottom": "0px none rgb(44, 44, 43)",
+      "box-shadow": "none",
+      "padding": "6px 12px"
+    },
+    {
+      "font-size": "14px",
+      "font-weight": "500",
+      "color": "rgb(44, 44, 43)",
+      "border-bottom": "0px none rgb(44, 44, 43)",
+      "box-shadow": "none",
+      "padding": "6px 12px"
+    }
+  ],
+  "tabActiveInner": [
+    {
+      "font-size": "16px",
+      "font-weight": "400",
+      "color": "rgb(44, 44, 43)",
+      "box-shadow": "none",
+      "border-radius": "0px",
+      "padding": "0px",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "t": "Board"
+    },
+    {
+      "font-size": "16px",
+      "font-weight": "400",
+      "color": "rgb(44, 44, 43)",
+      "box-shadow": "none",
+      "border-radius": "0px",
+      "padding": "0px",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "t": "피드보기"
+    }
+  ]
+}

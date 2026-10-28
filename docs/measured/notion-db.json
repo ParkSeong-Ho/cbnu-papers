@@ -1,0 +1,91 @@
+{
+  "blockTypes": [
+    "notion-selectable",
+    "notion-page-block",
+    "notion-collection_view-block",
+    "notion-selectable-container",
+    "notion-selectable-hover-menu-item",
+    "notion-floating-table-of-contents",
+    "notion-text-block",
+    "notion-column_list-block",
+    "notion-column-block",
+    "notion-callout-block",
+    "notion-sub_header-block",
+    "notion-image-block",
+    "notion-quote-block",
+    "notion-bookmark-block",
+    "notion-divider-block",
+    "notion-collection-view-tab-button",
+    "notion-collection-view-tab",
+    "notion-collection-view-body",
+    "notion-board-view",
+    "notion-board-group",
+    "notion-header-block",
+    "notion-collection-filter",
+    "notion-collection-sort",
+    "notion-table_of_contents-block",
+    "notion-sub_sub_header-block",
+    "notion-to_do-block",
+    "notion-embed-block",
+    "notion-code-block",
+    "notion-pdf-block",
+    "notion-bulleted_list-block",
+    "notion-toggle-block"
+  ],
+  "pills": [
+    {
+      "text": "언어 및 프레임워크",
+      "font-size": "14px",
+      "font-weight": "400",
+      "line-height": "16.8px",
+      "height": "20px",
+      "padding": "0px 9px 0px 7px",
+      "border-radius": "10px",
+      "color": "rgb(42, 83, 60)",
+      "background-color": "rgba(0, 96, 38, 0.157)",
+      "margin": "0px"
+    },
+    {
+      "text": "기타",
+      "font-size": "14px",
+      "font-weight": "400",
+      "line-height": "16.8px",
+      "height": "20px",
+      "padding": "0px 9px 0px 7px",
+      "border-radius": "10px",
+      "color": "rgb(101, 81, 33)",
+      "background-color": "rgba(209, 156, 0, 0.282)",
+      "margin": "0px"
+    },
+    {
+      "text": "데이터베이스",
+      "font-size": "14px",
+      "font-weight": "400",
+      "line-height": "16.8px",
+      "height": "20px",
+      "padding": "0px 9px 0px 7px",
+      "border-radius": "10px",
+      "color": "rgb(73, 72, 70)",
+      "background-color": "rgba(28, 19, 1, 0.11)",
+      "margin": "0px"
+    }
+  ],
+  "galleryCard": null,
+  "galleryCardInner": null,
+  "galleryGrid": null,
+  "cardTitle": null,
+  "tableHeader": null,
+  "tabs": {
+    "font-size": "16px",
+    "font-weight": "400",
+    "color": "rgb(44, 44, 43)",
+    "padding": "0px",
+    "border-bottom": "0px none rgb(44, 44, 43)",
+    "height": "40px"
+  },
+  "dbTitle": {
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "24px"
+  }
+}

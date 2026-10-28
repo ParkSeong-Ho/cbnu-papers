@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>논문 모아보기 시안</title>
+<style>
+  /* 03 가이드 v2: notion.site 실측 토큰 (2026-10-28). 변수 이름은 Notion 것 그대로. 외부 요청 0개 */
+  :root {
+    --font: ui-sans-serif, -apple-system, "system-ui", "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    --c-texPri: #2c2c2b; --c-texSec: #7d7a75; --c-texTer: #a19e99;
+    --c-bacPri: #ffffff; --c-bacEle: #ffffff;
+    --ca-borPriTra: #1c13011c; --ca-butHovBac: #37352f0f;
+    --c-blue: #2383e2;
+    --card-sha: 0 4px 12px #19191907, 0 1px 2px #19191905, 0 0 0 1px var(--ca-borPriTra);
+    --gra-t: #494846; --gra-b: #1c13011c;
+    --blu-t: #264a72; --blu-b: #0076d934;
+    --pur-t: #553b69; --pur-b: #5c00a324;
+    --red-t: #6d3531; --red-b: #ce18002a; --red-s: #cf5148;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --c-texPri: #f0efed; --c-texSec: #ada9a3; --c-texTer: #7d7a75;
+      --c-bacPri: #191919; --c-bacEle: #202020;
+      --ca-borPriTra: #ffffeb1a; --ca-butHovBac: #ffffff0e;
+      --card-sha: 0 2px 4px #19191914, 0 0 0 1px var(--ca-borPriTra);
+      --gra-t: #f0efed; --gra-b: #fffceb4e;
+      --blu-t: #e5f2fc; --blu-b: #51a6ff7e;
+      --pur-t: #f3ebf9; --pur-b: #d093ff6d;
+      --red-t: #fce9e7; --red-b: #ff746986;
+    }
+  }
+  :root[data-theme="dark"] {
+    --c-texPri: #f0efed; --c-texSec: #ada9a3; --c-texTer: #7d7a75;
+    --c-bacPri: #191919; --c-bacEle: #202020;
+    --ca-borPriTra: #ffffeb1a; --ca-butHovBac: #ffffff0e;
+    --card-sha: 0 2px 4px #19191914, 0 0 0 1px var(--ca-borPriTra);
+    --gra-t: #f0efed; --gra-b: #fffceb4e;
+    --blu-t: #e5f2fc; --blu-b: #51a6ff7e;
+    --pur-t: #f3ebf9; --pur-b: #d093ff6d;
+    --red-t: #fce9e7; --red-b: #ff746986;
+  }
+
+  * { box-sizing: border-box; }
+  /* Notion이 블록 테두리를 그리므로 바탕·테두리 없음. 단독으로 열 때만 페이지색 */
+  html { background: var(--c-bacPri); }
+  body { margin: 0; background: transparent; color: var(--c-texPri); font: 16px/24px var(--font); }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 16px 16px 40px; }
+  h2 { font-size: 24px; font-weight: 600; line-height: 31.2px; margin: 0 0 4px; }
+  h3 { font-size: 20px; font-weight: 600; line-height: 26px; margin: 32px 0 8px; }
+  .sec { color: var(--c-texSec); font-size: 14px; line-height: 20px; }
+  .mock { color: var(--c-texTer); }
+  a { color: inherit; text-decoration: underline; text-decoration-color: var(--c-texTer); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--c-texPri); }
+
+  /* 콜아웃: radius 10, padding 12, 1px 테두리, 배경 투명 (실측) */
+  .callout { display: flex; gap: 8px; margin: 16px 0; padding: 12px; border: 1px solid var(--ca-borPriTra); border-radius: 10px; }
+
+  /* 뷰 탭: 14px/500, padding 6px 12px (실측). 선택 표시는 추정 */
+  .views { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; padding-bottom: 8px; margin-bottom: 12px; border-bottom: 1px solid var(--ca-borPriTra); }
+  .view { font: 500 14px/20px var(--font); color: var(--c-texSec); background: none; border: 0; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+  .view:hover { background: var(--ca-butHovBac); }
+  .view[aria-selected="true"] { color: var(--c-texPri); background: var(--ca-butHovBac); }
+  .spacer { flex: 1; }
+  .search { font: 14px/20px var(--font); color: var(--c-texPri); background: none; border: 0; border-radius: 6px; padding: 6px 8px; width: 140px; }
+  .search:focus { outline: 0; box-shadow: #2383e291 0 0 0 1px inset, #2383e259 0 0 0 2px; }
+  .search::placeholder { color: var(--c-texTer); }
+
+  /* 태그 pill: h20, radius 10, padding 0 9 0 7, 14px (실측) */
+  .pill { display: inline-flex; align-items: center; height: 20px; padding: 0 9px 0 7px; border-radius: 10px; font-size: 14px; line-height: 20px; white-space: nowrap; }
+  .p-gray { color: var(--gra-t); background: var(--gra-b); }
+  .p-blue { color: var(--blu-t); background: var(--blu-b); }
+  .p-purple { color: var(--pur-t); background: var(--pur-b); }
+  .p-red { color: var(--red-t); background: var(--red-b); }
+  .pills { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+
+  /* 갤러리 카드: radius 10, 그림자 링, min 260px (실측) */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--c-bacEle); border-radius: 10px; box-shadow: var(--card-sha); padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 8px; cursor: pointer; }
+  .card:hover { background-image: linear-gradient(var(--ca-butHovBac), var(--ca-butHovBac)); }
+  .card-title { font-size: 16px; font-weight: 600; line-height: 24px; }
+  .card .desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .new { color: var(--red-s); font-weight: 500; }
+
+  /* 리스트 뷰: 행 구분선 없음, hover만 (Notion 리스트 관례) */
+  .list { list-style: none; margin: 0; padding: 0; }
+  .row { display: grid; grid-template-columns: 24px 1fr auto; gap: 0 8px; padding: 6px 8px; border-radius: 6px; }
+  .row:hover { background: var(--ca-butHovBac); }
+  .row .ico { line-height: 24px; }
+  .row .title { font-size: 16px; line-height: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .row .right { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+  .row .meta { grid-column: 2 / -1; display: flex; justify-content: space-between; gap: 8px; }
+
+  .theme { position: fixed; right: 12px; bottom: 12px; font: 500 14px/20px var(--font); color: var(--c-texSec); background: var(--c-bacEle); border: 0; border-radius: 6px; padding: 6px 10px; box-shadow: var(--card-sha); cursor: pointer; }
+
+  @media (max-width: 520px) {
+    .search { width: 100%; }
+    .spacer { display: none; }
+    .row { grid-template-columns: 24px 1fr; }
+    .row .right { grid-column: 2; justify-content: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h2>📚 교수 논문 모아보기</h2>
+  <div class="sec">충북대 소프트웨어학과 10 · 컴퓨터공학과 5 · 최근 5년(2021~) <span class="mock">· 시안: 홍신 연구실 외 데이터는 자리표시</span></div>
+
+  <div class="callout"><span>💡</span><span>마지막 업데이트 2026-10-26 (월) · 이번 주 신규 <span class="new">2편</span></span></div>
+
+  <div class="views" role="tablist">
+    <button class="view" role="tab" aria-selected="true">🗂️ 전체</button>
+    <button class="view" role="tab" aria-selected="false">소프트웨어</button>
+    <button class="view" role="tab" aria-selected="false">컴퓨터</button>
+    <button class="view" role="tab" aria-selected="false">🆕 신규</button>
+    <span class="spacer"></span>
+    <input class="search" type="search" placeholder="🔍 이름·키워드">
+  </div>
+
+  <div class="gallery">
+    <article class="card">
+      <div class="card-title">🧪 홍신 연구실</div>
+      <div class="sec">소프트웨어학과 · 홍신</div>
+      <div class="pills">
+        <span class="pill p-blue">퍼징 테스트</span><span class="pill p-blue">뮤테이션 테스트</span><span class="pill p-blue">결함 위치 추정</span>
+      </div>
+      <div class="sec desc">버그를 일으키는 입력을 자동으로 만들고, 테스트의 품질을 재고, 실패한 테스트로 버그 위치를 좁힌다</div>
+      <div class="sec"><span class="new">🆕 신규 2</span> · 논문 —편 · 최근 2025</div>
+    </article>
+
+    <article class="card">
+      <div class="card-title">🤖 ○○○ 연구실</div>
+      <div class="sec">컴퓨터공학과 · ○○○</div>
+      <div class="pills"><span class="pill p-purple">머신러닝</span><span class="pill p-purple">컴퓨터 비전</span></div>
+      <div class="sec desc">(자리표시) 연구주제 설명 한두 줄</div>
+      <div class="sec">논문 —편 · 최근 —</div>
+    </article>
+
+    <article class="card">
+      <div class="card-title">📄 이종연 연구실</div>
+      <div class="sec">소프트웨어학과 · 이종연</div>
+      <div class="pills"><span class="pill p-gray">조사 중</span></div>
+      <div class="sec desc">수집된 논문이 적어 카테고리를 아직 정하지 않았습니다</div>
+      <div class="sec">논문 —편</div>
+    </article>
+  </div>
+
+  <h3>홍신 연구실 · 논문</h3>
+  <div class="sec" style="margin-bottom:8px">신규 논문은 위에 고정되고 7일 뒤 일반 상태로 바뀝니다 <span class="mock">· 아래 제목은 시안용 예시</span></div>
+  <ul class="list">
+    <li class="row">
+      <span class="ico">📄</span>
+      <span class="title"><span class="pill p-red">🆕 신규</span>(예시) 퍼징으로 찾은 크래시 입력을 정제하는 기법</span>
+      <span class="right"><span class="pill p-blue">퍼징 테스트</span><span class="sec">2025</span></span>
+      <span class="meta sec"><span>저자 A, 홍신 · 학술지명 · 피인용 —</span><a href="#">DOI ↗</a></span>
+    </li>
+    <li class="row">
+      <span class="ico">📄</span>
+      <span class="title">(예시) 회귀 버그 벤치마크 구축 연구</span>
+      <span class="right"><span class="pill p-blue">퍼징 테스트</span><span class="sec">2024</span></span>
+      <span class="meta sec"><span>저자 B, 홍신 · Journal of Systems and Software · 피인용 —</span><a href="#">DOI ↗</a></span>
+    </li>
+    <li class="row">
+      <span class="ico">📄</span>
+      <span class="title">(예시) 오픈소스 프로젝트의 MISRA-C 위반 변화 분석</span>
+      <span class="right"><span class="pill p-gray">코드 품질</span><span class="sec">2024</span></span>
+      <span class="meta sec"><span>저자 C, 홍신 · 정보과학회논문지 · 피인용 —</span><a href="#">DOI ↗</a></span>
+    </li>
+  </ul>
+</div>
+
+<button class="theme" id="theme" title="시안 확인용: 라이트/다크 전환">🌓 테마</button>
+
+<script>
+  // 시안용 인터랙션만. 실제 필터링은 빌드 단계에서 구현
+  document.querySelectorAll('.view').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.view').forEach(x => x.setAttribute('aria-selected', x === t));
+  }));
+  document.getElementById('theme').addEventListener('click', () => {
+    const r = document.documentElement;
+    const dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    r.dataset.theme = dark ? 'light' : 'dark';
+  });
+</script>
+</body>
+</html>

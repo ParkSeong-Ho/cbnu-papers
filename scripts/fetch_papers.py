@@ -4,6 +4,8 @@
 처음 보는 논문만 added_at=오늘, status=new 로 넣는다.
 처음 수집되는 교수(기존 papers.json 에 논문이 하나도 없는 교수)의 논문은 전부 normal 로 넣는다.
 그래야 첫 실행이나 교수를 새로 추가한 주에 수백 편이 한꺼번에 "신규"로 뜨지 않는다.
+이번에 수집에 성공한 교수의 결과에서 빠진 논문은 그 교수와의 연결을 끊는다 (제외 규칙 변경 등).
+카테고리 태그는 저장하지 않는다. 카테고리는 자주 다듬으므로 build.py 가 매번 tag() 로 계산한다.
 
     python3 scripts/fetch_papers.py            # 평소 실행
     python3 scripts/fetch_papers.py --today 2026-11-02   # 날짜 고정 (테스트·재현용)
@@ -59,13 +61,19 @@ def keep_work(work, prof):
         return False
     if not work.get("title"):
         return False
+    field = (((work.get("primary_topic") or {}).get("field")) or {}).get("id", "")
+    ex = prof.get("exclude") or {}
+    if any(field.endswith(f) for f in ex.get("fields", [])):
+        return False
+    text = " ".join([work["title"]] + [k.get("display_name", "") for k in work.get("keywords") or []]).lower()
+    if any(m.lower() in text for m in ex.get("match", [])):
+        return False
     ids = set(prof["openalex"])
     if prof.get("affiliation_filter"):
         mine = [a for a in work.get("authorships", []) if short_id((a.get("author") or {}).get("id")) in ids]
         if not any(short_id(i.get("id")) == CBNU for a in mine for i in a.get("institutions", [])):
             return False
     if prof.get("field_filter"):
-        field = (((work.get("primary_topic") or {}).get("field")) or {}).get("id", "")
         if not field.endswith(CS_FIELD):
             return False
     return True
@@ -87,11 +95,12 @@ def to_paper(work):
         "doi": doi,
         "cited": work.get("cited_by_count", 0),
         "terms": [t for t in topics + keywords if t],
+        "source": "openalex",
     }
 
 
 def tag(paper, prof):
-    """교수 카테고리의 match 키워드가 제목·주제어에 걸리면 그 카테고리를 붙인다."""
+    """교수 카테고리의 match 키워드가 제목·주제어에 걸리면 그 카테고리 key 목록. (build.py 에서 사용)"""
     text = " ".join([paper["title"]] + paper.get("terms", [])).lower()
     return [c["key"] for c in prof.get("categories", []) if any(m.lower() in text for m in c.get("match", []))]
 
@@ -107,9 +116,10 @@ def merge(existing, fetched, today, baseline):
     """기존 목록과 이번 수집분을 합친다.
 
     existing: 기존 papers 목록
-    fetched:  {prof_id: [paper, ...]}  (tag 까지 끝난 것)
+    fetched:  {prof_id: [paper, ...]}  수집에 성공한 교수만 들어 있다
     같은 논문 판정: DOI → OpenAlex ID → (정규화 제목 + 연도)
     처음 보는 논문만 added_at=today, status=new. 단 baseline(교수 id 집합)에 든 교수의 논문은 normal.
+    fetched 에 있는 교수인데 이번 결과에 없는 논문은 그 교수를 prof 에서 뺀다. prof 가 비면 논문을 지운다.
     """
     by_key = {}
     out = []
@@ -135,6 +145,7 @@ def merge(existing, fetched, today, baseline):
         out.append(p)
         index(p)
 
+    matched = {pid: set() for pid in fetched}
     for prof_id, papers in fetched.items():
         for new in papers:
             old = find(new)
@@ -145,17 +156,20 @@ def merge(existing, fetched, today, baseline):
                 rec["status"] = "normal" if prof_id in baseline else "new"
                 out.append(rec)
                 index(rec)
+                matched[prof_id].add(id(rec))
                 continue
             keep = better(old, new)
-            for f in ("id", "title", "year", "date", "authors", "venue", "doi", "terms"):
+            for f in ("id", "title", "year", "date", "authors", "venue", "doi", "terms", "source"):
                 if keep is new and new.get(f):
                     old[f] = new[f]
             old["cited"] = max(old.get("cited", 0), new.get("cited", 0))
             if prof_id not in old["prof"]:
                 old["prof"].append(prof_id)
-            old["cats"] = sorted(set(old.get("cats", [])) | set(new.get("cats", [])))
             index(old)
-    return out
+            matched[prof_id].add(id(old))
+    for p in out:
+        p["prof"] = [q for q in p["prof"] if q not in matched or id(p) in matched[q]]
+    return [p for p in out if p["prof"]]
 
 
 def refresh_status(papers, today):
@@ -234,12 +248,7 @@ def main(argv=None):
         except Exception as e:  # 한 교수가 실패해도 나머지는 계속
             errors.append({"prof": prof["id"], "error": f"{type(e).__name__}: {e}"})
             continue
-        papers = []
-        for w in works:
-            if keep_work(w, prof):
-                p = to_paper(w)
-                p["cats"] = tag(p, prof)
-                papers.append(p)
+        papers = [to_paper(w) for w in works if keep_work(w, prof)]
         fetched[prof["id"]] = papers
         print(f"{prof['id']:<18} {len(works):>4} 받음 → {len(papers):>4} 채택", file=sys.stderr)
 
@@ -248,6 +257,7 @@ def main(argv=None):
     papers = refresh_status(merge(existing, fetched, args.today, baseline), args.today)
     papers.sort(key=lambda p: (p.get("date") or "", p["id"]), reverse=True)
     added = [p for p in papers if p["id"] not in before and p["status"] == "new"]
+    removed = len(before - {p["id"] for p in papers})
 
     by_prof = {}
     for p in added:
@@ -256,11 +266,11 @@ def main(argv=None):
     updates.append({
         "run_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "today": args.today, "baseline": sorted(baseline), "total": len(papers),
-        "new": len(added), "by_prof": by_prof, "errors": errors,
+        "new": len(added), "removed": removed, "by_prof": by_prof, "errors": errors,
     })
     save("papers.json", papers)
     save("updates.json", updates[-KEEP_RUNS:])
-    print(f"총 {len(papers)}편, 신규 {len(added)}편, 첫 수집 교수 {len(baseline)}명, 오류 {len(errors)}건", file=sys.stderr)
+    print(f"총 {len(papers)}편, 신규 {len(added)}편, 삭제 {removed}편, 첫 수집 교수 {len(baseline)}명, 오류 {len(errors)}건", file=sys.stderr)
     return 1 if errors else 0
 
 

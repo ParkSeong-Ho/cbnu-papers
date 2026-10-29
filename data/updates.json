@@ -25,5 +25,18 @@
   "new": 0,
   "by_prof": {},
   "errors": []
+ },
+ {
+  "run_at": "2026-10-29T07:03:02+00:00",
+  "today": "2026-10-29",
+  "baseline": [],
+  "total": 407,
+  "new": 3,
+  "removed": 10,
+  "by_prof": {
+   "kim-jinwoo": 2,
+   "jo-kyuri": 1
+  },
+  "errors": []
  }
 ]

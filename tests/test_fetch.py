@@ -20,9 +20,7 @@ def work(wid="W1", title="A Study", doi=None, typ="article", venue="Journal X", 
 
 
 def paper(**kw):
-    p = f.to_paper(work(**kw))
-    p["cats"] = []
-    return p
+    return f.to_paper(work(**kw))
 
 
 PROF = {"id": "p1", "openalex": ["A1"], "categories": [
@@ -46,6 +44,12 @@ class KeepWork(unittest.TestCase):
         self.assertFalse(f.keep_work(work(field="fields/31"), prof))
         self.assertTrue(f.keep_work(work(field="fields/17"), prof))
 
+    def test_exclude_rules(self):
+        prof = dict(PROF, exclude={"fields": ["fields/12"], "match": ["membrane distillation"]})
+        self.assertFalse(f.keep_work(work(field="fields/12"), prof))
+        self.assertFalse(f.keep_work(work(title="Membrane Distillation Performance"), prof))
+        self.assertTrue(f.keep_work(work(), prof))
+
 
 class Tagging(unittest.TestCase):
     def test_matches_title_and_terms(self):
@@ -56,6 +60,11 @@ class Tagging(unittest.TestCase):
 
 
 class Merge(unittest.TestCase):
+    def test_records_source_and_no_stored_categories(self):
+        out = f.merge([], {"p1": [paper()]}, "2026-10-26", baseline={"p1"})
+        self.assertEqual(out[0]["source"], "openalex")
+        self.assertNotIn("cats", out[0])
+
     def test_baseline_marks_normal(self):
         out = f.merge([], {"p1": [paper()]}, "2026-10-26", baseline={"p1", "p2"})
         self.assertEqual(out[0]["status"], "normal")
@@ -93,10 +102,17 @@ class Merge(unittest.TestCase):
         out = f.merge(base, {"p1": [paper(cited=5)]}, "2026-11-02", baseline=set())
         self.assertEqual((out[0]["added_at"], out[0]["cited"]), ("2026-10-26", 5))
 
+    def test_drops_professor_when_paper_no_longer_returned(self):
+        base = f.merge([], {"p1": [paper()], "p2": [paper()], "p3": [paper(wid="W5", title="Z")]},
+                       "2026-10-26", baseline={"p1", "p2", "p3"})
+        out = f.merge(base, {"p1": [], "p2": [paper()]}, "2026-11-02", baseline=set())  # p3 는 수집 실패
+        self.assertEqual({p["id"]: p["prof"] for p in out}, {"W1": ["p2"], "W5": ["p3"]})
+        out = f.merge(out, {"p2": []}, "2026-11-09", baseline=set())
+        self.assertEqual([p["id"] for p in out], ["W5"])
 
     def test_baseline_is_per_professor(self):
         base = f.merge([], {"p1": [paper()]}, "2026-10-26", baseline={"p1"})
-        out = f.merge(base, {"p1": [paper(wid="W2", title="B")], "p9": [paper(wid="W3", title="C")]},
+        out = f.merge(base, {"p1": [paper(), paper(wid="W2", title="B")], "p9": [paper(wid="W3", title="C")]},
                       "2026-11-02", baseline={"p9"})
         st = {p["id"]: p["status"] for p in out}
         self.assertEqual(st, {"W1": "normal", "W2": "new", "W3": "normal"})

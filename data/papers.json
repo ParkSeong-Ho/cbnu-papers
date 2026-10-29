@@ -17,7 +17,6 @@
   "terms": [
    "Educational Games and Gamification"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -44,7 +43,6 @@
    "biometric authentication",
    "privacy attacks"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -76,7 +74,6 @@
    "attention maps",
    "k-nearest neighbor graph"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -106,7 +103,6 @@
    "safety monitoring",
    "object detection"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -139,7 +135,6 @@
    "intelligent transportation systems",
    "total cost of ownership"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -168,7 +163,6 @@
    "visual grounding",
    "transformer-based object detection"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -202,7 +196,6 @@
    "service level agreements",
    "warm-start initialization"
   ],
-  "cats": [],
   "prof": [
    "noh-seoyoung"
   ],
@@ -241,7 +234,6 @@
    "hematological parameters",
    "dogs"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -269,7 +261,6 @@
    "predictive modeling",
    "grassland management"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -299,7 +290,6 @@
    "community detection",
    "LLM evaluation framework"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -329,7 +319,6 @@
    "railway communication",
    "connection stability"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -359,7 +348,6 @@
    "test data generation",
    "C/C++ programs"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -388,7 +376,6 @@
    "large language models",
    "graph neural networks"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -421,7 +408,6 @@
    "research collaboration networks",
    "political networks"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -454,7 +440,6 @@
    "emergency medical records",
    "class imbalance"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -478,7 +463,6 @@
    "large language models",
    "test data generation"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -507,7 +491,6 @@
    "community detection",
    "high-order relationships"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -541,7 +524,6 @@
    "user satisfaction",
    "preterm birth prediction"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -576,7 +558,6 @@
    "pancreatic precursor lesions",
    "pancreatic cancer progression"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -603,7 +584,6 @@
    "memory management",
    "resource allocation"
   ],
-  "cats": [],
   "prof": [
    "jo-heeseung"
   ],
@@ -629,7 +609,6 @@
    "self-supervised learning",
    "accident prediction"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -665,7 +644,6 @@
    "program monitoring",
    "Cambodia"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -693,7 +671,6 @@
    "lightweight neural architecture",
    "memory usage"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -722,7 +699,6 @@
    "lightweight student models",
    "Hades"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -763,7 +739,6 @@
    "graph neural networks",
    "structural flexibility"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -797,7 +772,6 @@
    "very high resolution imagery",
    "steel surface defects"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -829,7 +803,6 @@
    "coming of age",
    "data silos"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -857,7 +830,6 @@
    "attention function",
    "GLUE benchmark"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -890,7 +862,6 @@
    "open source software",
    "interobserver variability"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -917,12 +888,43 @@
    "random projections",
    "stochastic time series"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
+ },
+ {
+  "id": "W7148908712",
+  "title": "HarassGuard: Detecting Harassment Behaviors in Social Virtual Reality with Vision-Language Models",
+  "year": 2026,
+  "date": "2026-04-03",
+  "authors": [
+   "Junhee Lee",
+   "Minseok Kim",
+   "Hwanjo Heo",
+   "Seungwon Woo",
+   "Jinwoo Kim"
+  ],
+  "venue": "IEEE Transactions on Visualization and Computer Graphics",
+  "doi": "10.1109/tvcg.2026.3680723",
+  "cited": 1,
+  "terms": [
+   "Hate Speech and Cyberbullying Detection",
+   "social virtual reality",
+   "vision-language models",
+   "physical harassment",
+   "prompt engineering",
+   "privacy-preserving detection",
+   "contextual reasoning",
+   "fine-tuning efficiency"
+  ],
+  "source": "openalex",
+  "prof": [
+   "kim-jinwoo"
+  ],
+  "added_at": "2026-10-29",
+  "status": "new"
  },
  {
   "id": "W7162024511",
@@ -950,7 +952,6 @@
    "urban resilience",
    "data integrity"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -980,7 +981,6 @@
    "random forest",
    "recursive feature elimination"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -1015,7 +1015,6 @@
    "HL-LHC",
    "grid infrastructure"
   ],
-  "cats": [],
   "prof": [
    "noh-seoyoung"
   ],
@@ -1044,7 +1043,6 @@
    "controlled environment agriculture",
    "plant stress monitoring"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -1079,7 +1077,6 @@
    "domain-invariant features",
    "data labeling cost"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -1114,7 +1111,6 @@
    "regularization",
    "first impressions"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -1141,7 +1137,6 @@
    "temporal embeddings",
    "time series compression"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -1165,7 +1160,6 @@
    "Recommender Systems and Techniques",
    "cross-modal consistency"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -1190,7 +1184,6 @@
    "texture segmentation",
    "encoder-decoder segmentation"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -1220,36 +1213,8 @@
    "adverse drug reactions",
    "centrality analysis"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W7134977048",
-  "title": "Two Types of Pragmatic Ellipsis and Korean - A Preliminary Contrastive Study -",
-  "year": 2026,
-  "date": "2026-02-28",
-  "authors": [
-   "Euijong Lee"
-  ],
-  "venue": "The Journal of Yeongju Language & Literature",
-  "doi": "10.30774/yjll.2026.2.62.129",
-  "cited": 0,
-  "terms": [
-   "Syntax, Semantics, Linguistic Variation",
-   "Korean language",
-   "English language",
-   "ellipsis licensing",
-   "information structure",
-   "topic and focus",
-   "Korean-English contrastive analysis"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -1279,7 +1244,6 @@
    "knowledge transfer",
    "urban hydrology"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -1311,7 +1275,6 @@
    "model-agnostic framework",
    "RECON"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -1343,7 +1306,6 @@
    "intensive care unit",
    "clinical prediction"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -1376,7 +1338,6 @@
    "manufacturing quality control",
    "automated visual inspection"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -1406,7 +1367,6 @@
    "smart environments",
    "Internet of Things security"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -1435,7 +1395,6 @@
    "nnU-Net",
    "3D brain MRI"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -1469,7 +1428,6 @@
    "real-time detection",
    "false alarm reduction"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -1494,7 +1452,6 @@
    "knowledge distillation",
    "domain mismatch"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -1521,7 +1478,6 @@
    "image denoising",
    "signal denoising"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -1555,7 +1511,6 @@
    "sensor availability",
    "fire alarm systems"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -1584,7 +1539,6 @@
    "feature optimization",
    "subcellular localization"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -1618,7 +1572,6 @@
    "CIFAR-100",
    "STL-10"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -1646,7 +1599,6 @@
    "NAS-Bench-201",
    "NAS-Bench-101"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -1673,7 +1625,6 @@
    "graph convolutional networks",
    "higher-order relations"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -1707,7 +1658,6 @@
    "large language models",
    "Mistral-7B"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -1738,7 +1688,6 @@
    "rotary position embedding",
    "zero-shot transfer"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri",
    "jeong-youngseob"
@@ -1777,7 +1726,6 @@
    "diagnostic accuracy",
    "graphical user interface"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -1808,7 +1756,6 @@
    "data placement optimization",
    "memory migration"
   ],
-  "cats": [],
   "prof": [
    "jo-heeseung"
   ],
@@ -1847,7 +1794,6 @@
    "veterinary hematology",
    "automated blood analysis"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -1875,7 +1821,6 @@
    "graph neural networks",
    "TCGA"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -1911,7 +1856,6 @@
    "wandering detection",
    "social workers"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -1941,7 +1885,6 @@
    "container vulnerabilities",
    "attack surface reduction"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -1976,7 +1919,6 @@
    "child health care",
    "digital health"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -2006,7 +1948,6 @@
    "dual-stream transformer",
    "spatiotemporal feature fusion"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -2042,7 +1983,6 @@
    "probabilistic models",
    "threat mitigation"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -2074,7 +2014,6 @@
    "robot mobility",
    "industrial automation"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -2103,7 +2042,6 @@
    "low signal-to-noise ratio",
    "complex-valued signal processing"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -2137,7 +2075,6 @@
    "air quality sensors",
    "low-power edge devices"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -2169,7 +2106,6 @@
    "noise reduction",
    "image enhancement"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -2206,7 +2142,6 @@
    "holographic printing",
    "texture information"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -2234,7 +2169,6 @@
    "memory bandwidth",
    "remote memory access"
   ],
-  "cats": [],
   "prof": [
    "jo-heeseung"
   ],
@@ -2257,12 +2191,45 @@
    "Advanced Malware Detection Techniques",
    "malware detection"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
+ },
+ {
+  "id": "W4415436967",
+  "title": "PassREfinder-FL: Privacy-preserving credential stuffing risk prediction via graph-based federated learning for representing password reuse between websites",
+  "year": 2025,
+  "date": "2025-10-22",
+  "authors": [
+   "Jaehan Kim",
+   "Minkyoo Song",
+   "Minjae Seo",
+   "Youngjin Jin",
+   "Seungwon Shin",
+   "Jinwoo Kim"
+  ],
+  "venue": "Expert Systems with Applications",
+  "doi": "10.1016/j.eswa.2025.130111",
+  "cited": 3,
+  "terms": [
+   "User Authentication and Security Systems",
+   "credential stuffing",
+   "password reuse",
+   "federated learning",
+   "graph neural networks",
+   "link prediction",
+   "privacy preservation",
+   "risk prediction",
+   "account sharing"
+  ],
+  "source": "openalex",
+  "prof": [
+   "kim-jinwoo"
+  ],
+  "added_at": "2026-10-29",
+  "status": "new"
  },
  {
   "id": "W4415126284",
@@ -2291,7 +2258,6 @@
    "PDF documents",
    "foundation models"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -2318,7 +2284,6 @@
    "heterogeneous data fusion",
    "multilayer perceptron"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -2349,7 +2314,6 @@
    "self-attention",
    "multi-scale feature extraction"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -2379,7 +2343,6 @@
    "domain-invariant features",
    "multi-scale feature learning"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -2406,7 +2369,6 @@
    "patch tokens",
    "concept drift"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -2437,7 +2399,6 @@
    "convolutional neural networks",
    "on-device processing"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -2471,7 +2432,6 @@
    "Internet of Things",
    "real-time analytics"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -2501,7 +2461,6 @@
    "cross-domain recommendation",
    "knowledge graph visualization"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -2536,7 +2495,6 @@
    "power spectral density",
    "fine motor control"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -2569,7 +2527,6 @@
    "pork quality",
    "backfat thickness"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -2598,7 +2555,6 @@
    "deep learning classification",
    "lightweight monitoring"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -2635,7 +2591,6 @@
    "personalized health guidance",
    "elementary school students"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -2669,7 +2624,6 @@
    "energy consumption",
    "privacy and security"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -2703,7 +2657,6 @@
    "manufacturing quality control",
    "foreign material contamination"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -2732,7 +2685,6 @@
    "industrial workers",
    "false negative reduction"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -2764,7 +2716,6 @@
    "contrastive learning",
    "outlier samples"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -2800,7 +2751,6 @@
    "sintering",
    "materials property prediction"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -2831,7 +2781,6 @@
    "underwater channel modeling",
    "machine learning prediction"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -2860,7 +2809,6 @@
    "instruction tuning",
    "large language models"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -2894,7 +2842,6 @@
    "decision tree",
    "precision agriculture"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -2924,7 +2871,6 @@
    "food price forecasting",
    "South Korea"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -2953,7 +2899,6 @@
    "long-range dependencies",
    "data fusion"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -2983,7 +2928,6 @@
    "Node-RED",
    "voice recognition"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -3011,7 +2955,6 @@
    "input transformation",
    "bug localization"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -3042,7 +2985,6 @@
    "Video Swin Transformer",
    "3D convolutional neural networks"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -3073,7 +3015,6 @@
    "auditory guidance",
    "user satisfaction"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -3106,7 +3047,6 @@
    "pixel-based analysis",
    "automated image analysis"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -3133,7 +3073,6 @@
    "sensor data",
    "temporal dependencies"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -3159,7 +3098,6 @@
    "investment portfolio",
    "constraint violation"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -3190,7 +3128,6 @@
    "policy convergence",
    "weight adjustment"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -3222,7 +3159,6 @@
    "plant growth monitoring",
    "food security"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -3251,7 +3187,6 @@
    "food supply management",
    "demand forecasting"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -3279,7 +3214,6 @@
    "domain-specific data",
    "computational efficiency"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -3311,7 +3245,6 @@
    "SeqGAN",
    "class imbalance"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -3340,7 +3273,6 @@
    "VRChat",
    "suspicious object detection"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -3368,7 +3300,6 @@
    "manufacturing quality control",
    "contact lens manufacturing"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -3395,7 +3326,6 @@
    "wireless communication signals",
    "low signal-to-noise ratio"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -3432,7 +3362,6 @@
    "drug repurposing",
    "protein flexibility"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -3461,7 +3390,6 @@
    "long-term memory",
    "counseling services"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -3492,7 +3420,6 @@
    "categorization",
    "text representation learning"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -3530,7 +3457,6 @@
    "molecular representation",
    "cheminformatics"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri",
    "jeong-youngseob"
@@ -3564,7 +3490,6 @@
    "GPU acceleration",
    "random initialization"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -3593,7 +3518,6 @@
    "static analysis",
    "dynamic analysis"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -3619,7 +3543,6 @@
    "constrained Markov decision process",
    "constraint violation"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -3652,7 +3575,6 @@
    "drug candidate prioritization",
    "precision medicine"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -3692,7 +3614,6 @@
    "automated image analysis",
    "deep learning"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -3720,7 +3641,6 @@
    "2D convolution",
    "signal-to-noise ratio"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -3752,7 +3672,6 @@
    "convergence rate",
    "energy consumption"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -3784,7 +3703,6 @@
    "precision oncology",
    "high-throughput sequencing data"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -3817,7 +3735,6 @@
    "pork industry",
    "meat supply chain"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -3850,7 +3767,6 @@
    "worker safety monitoring",
    "smart manufacturing"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -3883,7 +3799,6 @@
    "performance evaluation",
    "tool selection"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -3913,7 +3828,6 @@
    "autonomous driving perception",
    "WideResNet"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -3944,7 +3858,6 @@
    "robot mobility",
    "industrial automation"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -3971,7 +3884,6 @@
    "resource-constrained systems",
    "embedded systems"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -4006,7 +3918,6 @@
    "brain MRI",
    "skin images"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -4034,7 +3945,6 @@
    "memory management",
    "DRAM"
   ],
-  "cats": [],
   "prof": [
    "jo-heeseung"
   ],
@@ -4065,7 +3975,6 @@
    "network throughput",
    "policy complexity"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -4104,7 +4013,6 @@
    "fringe patterns",
    "end-to-end deep learning"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -4131,7 +4039,6 @@
    "malware detection",
    "document clustering"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -4163,7 +4070,6 @@
    "cross-attention",
    "U-Net"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -4194,7 +4100,6 @@
    "sentiment classification",
    "news classification"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -4228,7 +4133,6 @@
    "text-to-speech",
    "sampling speed"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -4260,7 +4164,6 @@
    "copy and paste",
    "photovoltaic power forecasting"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -4294,7 +4197,6 @@
    "data augmentation",
    "fracture classification"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -4336,7 +4238,6 @@
    "sepsis diagnosis",
    "disease diagnosis"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -4364,7 +4265,6 @@
    "mobile sensing",
    "assistive technology"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -4394,7 +4294,6 @@
    "attack dataset",
    "safety assurance"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -4424,7 +4323,6 @@
    "large language models",
    "temporal context"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -4457,7 +4355,6 @@
    "computational complexity reduction",
    "LIBSVM"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -4491,7 +4388,6 @@
    "interpretability",
    "neural network security"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -4527,7 +4423,6 @@
    "access to culture",
    "visually impaired people"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -4558,7 +4453,6 @@
    "location-based services",
    "assistive technology"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -4586,7 +4480,6 @@
    "feature fusion",
    "video surveillance"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -4616,7 +4509,6 @@
    "morphological analysis",
    "accident case analysis"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -4646,7 +4538,6 @@
    "ensemble learning",
    "data preprocessing"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -4672,7 +4563,6 @@
    "deaf communication",
    "recognition accuracy"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -4690,7 +4580,7 @@
   ],
   "venue": "Applied Sciences",
   "doi": "10.3390/app14199090",
-  "cited": 4,
+  "cited": 5,
   "terms": [
    "IoT and Edge/Fog Computing",
    "network digital twin",
@@ -4703,12 +4593,12 @@
    "Markov decision process",
    "network optimization"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W4403256806",
@@ -4736,7 +4626,6 @@
    "molecular descriptors",
    "cheminformatics"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -4766,7 +4655,6 @@
    "ensemble forecasting",
    "weather-based forecasting"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -4795,7 +4683,6 @@
    "deep learning vulnerability",
    "German Traffic Sign Recognition Benchmark"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -4827,7 +4714,6 @@
    "AFL",
    "power"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -4857,7 +4743,6 @@
    "polyaluminum chloride",
    "water scarcity"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -4884,7 +4769,6 @@
    "feature fusion",
    "audio features"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -4915,7 +4799,6 @@
    "code quality",
    "GitHub repositories"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -4946,7 +4829,6 @@
    "6G",
    "signal-to-noise ratio improvement"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -4978,7 +4860,6 @@
    "market stability",
    "South Korea"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -5007,7 +4888,6 @@
    "personal networks",
    "status theory"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -5035,7 +4915,6 @@
    "fully convolutional network",
    "image segmentation"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -5062,7 +4941,6 @@
    "classification accuracy",
    "limited training data"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -5093,7 +4971,6 @@
    "traffic rerouting",
    "anomaly monitoring"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -5122,7 +4999,6 @@
    "cipher suites",
    "execution time"
   ],
-  "cats": [],
   "prof": [
    "jo-heeseung"
   ],
@@ -5152,7 +5028,6 @@
    "imitation learning",
    "regression tasks"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -5178,7 +5053,6 @@
    "unmanned aerial vehicles",
    "privacy"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -5203,7 +5077,6 @@
    "signal feature extraction",
    "generalization performance"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -5231,7 +5104,6 @@
    "human behavior recognition",
    "video surveillance"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -5257,7 +5129,6 @@
    "test oracles",
    "software testing"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -5289,7 +5160,6 @@
    "solid dosage forms",
    "drug development"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri",
    "jeong-youngseob"
@@ -5319,7 +5189,6 @@
    "evolution strategies",
    "UAV charging"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -5345,7 +5214,6 @@
    "hypergraph representation learning",
    "node classification"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -5374,7 +5242,6 @@
    "regulatory requirements",
    "investor risk aversion"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -5411,7 +5278,6 @@
    "inference acceleration",
    "system-on-chip design"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -5439,7 +5305,6 @@
    "microstructure image analysis",
    "transformation kinetics"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -5469,7 +5334,6 @@
    "model compression",
    "hardware constraints"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -5501,7 +5365,6 @@
    "transparency",
    "feedback loops"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -5533,38 +5396,8 @@
    "sequential patterns",
    "building fire safety"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4395483667",
-  "title": "The [intolerance] usage of the adverb ‘mos’ in Korean",
-  "year": 2024,
-  "date": "2024-03-31",
-  "authors": [
-   "Euijong Lee"
-  ],
-  "venue": "The Journal of Korean Studies",
-  "doi": "10.17790/kors.2024.3.88.113",
-  "cited": 1,
-  "terms": [
-   "Syntax, Semantics, Linguistic Variation",
-   "adverb usage",
-   "sensory verbs",
-   "sensory discomfort",
-   "emotional discomfort",
-   "inability",
-   "auxiliary verb constructions",
-   "compound words",
-   "tolerance"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -5589,7 +5422,6 @@
    "LSTM comparison",
    "model training efficiency"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -5617,7 +5449,6 @@
    "5G signals",
    "deep learning architectures"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -5648,7 +5479,6 @@
    "multimodal fusion",
    "sky images"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -5667,7 +5497,7 @@
   ],
   "venue": "Frontiers in Cardiovascular Medicine",
   "doi": "10.3389/fcvm.2024.1276608",
-  "cited": 11,
+  "cited": 12,
   "terms": [
    "Artificial Intelligence in Healthcare",
    "acute myocardial infarction",
@@ -5676,12 +5506,12 @@
    "class imbalance",
    "cardiovascular disease"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W4392659707",
@@ -5710,9 +5540,9 @@
    "betacoronaviruses",
    "oral antivirals"
   ],
-  "cats": [],
   "prof": [
-   "jo-kyuri"
+   "jo-kyuri",
+   "jeong-youngseob"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -5743,7 +5573,6 @@
    "model selection",
    "sensor data accuracy"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -5769,7 +5598,6 @@
    "BERT",
    "transformer models"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -5799,7 +5627,6 @@
    "annotation quality",
    "employee training"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -5830,7 +5657,6 @@
    "emotional agents",
    "machine emotions"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -5856,7 +5682,6 @@
    "web services",
    "Korean language processing"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -5888,7 +5713,6 @@
    "drug repurposing",
    "Mordred descriptors"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri",
    "jeong-youngseob"
@@ -5922,12 +5746,61 @@
    "waist circumference",
    "health decision support"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
+ },
+ {
+  "id": "W4391385465",
+  "title": "Ubiquitin ligase RNF20 coordinates sequential adipose thermogenesis with brown and beige fat-specific substrates",
+  "year": 2024,
+  "date": "2024-01-31",
+  "authors": [
+   "Yong Geun Jeon",
+   "Hahn Nahmgoong",
+   "Jiyoung Oh",
+   "Dabin Lee",
+   "Dong Wook Kim",
+   "Ye Young Kim",
+   "Ye Young Kim",
+   "Yul Ji",
+   "Ji Seul Han",
+   "Sung Min Kim",
+   "Jee Hyung Sohn",
+   "Won Taek Lee",
+   "Jae Bum Kim",
+   "Jeu Park",
+   "Jin Young Huh",
+   "Kyuri Jo",
+   "Je‐Yoel Cho",
+   "Jiyoung Park",
+   "Jae Bum Kim"
+  ],
+  "venue": "Nature Communications",
+  "doi": "10.1038/s41467-024-45270-7",
+  "cited": 11,
+  "terms": [
+   "Adipose Tissue and Metabolism",
+   "RNF20",
+   "E3 ubiquitin ligase",
+   "adipose thermogenesis",
+   "brown adipose tissue",
+   "inguinal adipose tissue",
+   "beige adipogenesis",
+   "cold exposure",
+   "GABPα",
+   "NCOR1",
+   "PPARγ",
+   "protein stability"
+  ],
+  "source": "openalex",
+  "prof": [
+   "jo-kyuri"
+  ],
+  "added_at": "2026-10-29",
+  "status": "new"
  },
  {
   "id": "W4391251618",
@@ -5951,7 +5824,6 @@
    "6G",
    "ICT technologies"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -5986,7 +5858,6 @@
    "security defenses",
    "control plane security"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -6020,7 +5891,6 @@
    "service delivery",
    "scalability"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -6045,7 +5915,6 @@
    "Advanced Authentication Protocols Security",
    "Internet of Things"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -6076,7 +5945,6 @@
    "smart livestock farming",
    "object detection"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -6112,7 +5980,6 @@
    "model explainability",
    "overfitting"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -6145,7 +6012,6 @@
    "sensor data acquisition",
    "model selection framework"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -6176,7 +6042,6 @@
    "BERT",
    "safety hazard detection"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -6212,7 +6077,6 @@
    "smartphone camera",
    "concentric and eccentric contraction"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -6247,7 +6111,6 @@
    "remote code execution",
    "vulnerability exploitation"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -6281,7 +6144,6 @@
    "data freshness",
    "signal attenuation"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -6313,7 +6175,6 @@
    "Ceph",
    "Longhorn"
   ],
-  "cats": [],
   "prof": [
    "noh-seoyoung"
   ],
@@ -6341,7 +6202,6 @@
    "market frictions",
    "generalization to unseen data"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -6367,7 +6227,6 @@
    "log-distance path loss model",
    "received signal strength indicator"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -6397,7 +6256,6 @@
    "low SNR detection",
    "embedded machine learning"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -6428,7 +6286,6 @@
    "robot mobility",
    "industrial automation"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -6457,7 +6314,6 @@
    "cross-attention",
    "U-Net"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -6484,7 +6340,6 @@
    "permissioned blockchain",
    "graph neural networks"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -6521,7 +6376,6 @@
    "threat detection",
    "Varroa destructor"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -6554,7 +6408,6 @@
    "adversarial robustness",
    "cryptocurrency exchanges"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -6582,7 +6435,6 @@
    "ensemble learning",
    "indoor positioning"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -6614,7 +6466,6 @@
    "attack surface",
    "network protocol testing"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -6639,7 +6490,6 @@
    "adversarial attacks",
    "loss function design"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -6668,7 +6518,6 @@
    "off-the-shelf devices",
    "encrypted traffic"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -6696,7 +6545,6 @@
    "multi-task learning",
    "auxiliary network"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -6724,7 +6572,6 @@
    "deep learning for time series",
    "price forecasting"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -6755,7 +6602,6 @@
    "scalability",
    "distributed consensus"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -6787,7 +6633,6 @@
    "training time reduction",
    "signal-to-noise ratio"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -6817,7 +6662,6 @@
    "decision-based attacks",
    "camera-based perception"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -6852,7 +6696,6 @@
    "Korea National Health and Nutrition Examination Survey",
    "feature importance"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -6880,7 +6723,6 @@
    "personalized education",
    "Gyeongju"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -6909,7 +6751,6 @@
    "limited labeled data",
    "data diversity"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -6937,7 +6778,6 @@
    "livestock epidemics",
    "media influence"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -6969,7 +6809,6 @@
    "data scarcity",
    "information loss"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -7000,7 +6839,6 @@
    "heart disease classification",
    "veterinary cardiology"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -7032,7 +6870,6 @@
    "jig design",
    "industrial inspection"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -7067,7 +6904,6 @@
    "limited experimental data",
    "forward prediction"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -7099,7 +6935,6 @@
    "distributed learning",
    "replay memory"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -7131,7 +6966,6 @@
    "left ventricular dilatation",
    "object detection"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -7158,7 +6992,6 @@
    "greenhouse monitoring",
    "univariate time series forecasting"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -7191,7 +7024,6 @@
    "digital healthcare",
    "health monitoring"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -7225,7 +7057,6 @@
    "somatic mutations",
    "cancer genomics"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -7251,7 +7082,6 @@
    "feature extraction",
    "model combination"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -7280,7 +7110,6 @@
    "wayfinding signage",
    "indoor navigation"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -7304,7 +7133,6 @@
    "Advanced Data Storage Technologies",
    "I/O-intensive workloads"
   ],
-  "cats": [],
   "prof": [
    "jo-heeseung"
   ],
@@ -7336,7 +7164,6 @@
    "video summarization",
    "temporal modeling"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -7365,7 +7192,6 @@
    "semantic segmentation",
    "automated visual inspection"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -7393,7 +7219,6 @@
    "out-of-distribution data",
    "impulsive noise"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -7424,7 +7249,6 @@
    "convolutional neural network features",
    "UCF-Crime dataset"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -7450,67 +7274,8 @@
    "hybrid deep learning model",
    "consumer safety"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4388773813",
-  "title": "Contrastive Study on Non-typical Interrogatives in Korean and Chinese",
-  "year": 2023,
-  "date": "2023-06-30",
-  "authors": [
-   "Min Li",
-   "Euijong Lee"
-  ],
-  "venue": "The Journal of Yeongju Language & Literature",
-  "doi": "10.30774/yjll.2023.10.55.69",
-  "cited": 0,
-  "terms": [
-   "Syntax, Semantics, Linguistic Variation",
-   "wh-questions",
-   "yes-no questions"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4382364477",
-  "title": "Effect of fabrication technique on membrane distillation performance of photothermal membrane: Electrospinning vs electrospraying",
-  "year": 2023,
-  "date": "2023-06-28",
-  "authors": [
-   "Yumin Oh",
-   "Jae‐Hyuk Kim",
-   "Euijong Lee",
-   "Junggil Lee",
-   "Sanghyun Jeong"
-  ],
-  "venue": "Desalination",
-  "doi": "10.1016/j.desal.2023.116799",
-  "cited": 12,
-  "terms": [
-   "Membrane Separation Technologies",
-   "membrane distillation",
-   "photothermal membrane",
-   "gold nanoparticles",
-   "electrospinning",
-   "electrospraying",
-   "temperature polarization",
-   "PVDF membranes",
-   "organic fouling",
-   "808 nm laser irradiation"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -7538,7 +7303,6 @@
    "dynamic data",
    "computational efficiency"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -7575,7 +7339,6 @@
    "AdaBoost",
    "ordinary people"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -7607,7 +7370,6 @@
    "GCN",
    "non-covalent interactions"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri",
    "jeong-youngseob"
@@ -7640,7 +7402,6 @@
    "ensemble learning",
    "physical twin"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -7669,7 +7430,6 @@
    "edge servers",
    "mobile application"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -7694,7 +7454,6 @@
    "malware detection",
    "deep learning"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -7723,7 +7482,6 @@
    "data sparsity",
    "music recommendation"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -7752,7 +7510,6 @@
    "hardware profiling",
    "IoT edge computing"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -7783,7 +7540,6 @@
    "task combination",
    "cross-linguistic comparison"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -7811,7 +7567,6 @@
    "blockchain consensus",
    "scalability"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -7845,7 +7600,6 @@
    "resource-constrained devices",
    "sensor data accuracy"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -7877,7 +7631,6 @@
    "energy consumption",
    "fault tolerance"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -7907,7 +7660,6 @@
    "speech recognition accuracy",
    "sign language dataset"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -7931,7 +7683,6 @@
    "open source software",
    "C/C++ programs"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -7961,7 +7712,6 @@
    "medical image segmentation",
    "computational efficiency"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -7991,7 +7741,6 @@
    "one-hot encoding",
    "explainable machine learning"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -8019,7 +7768,6 @@
    "boot time reduction",
    "memory usage"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -8048,7 +7796,6 @@
    "ISO 26262",
    "IEC 61508"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -8070,7 +7817,7 @@
   ],
   "venue": "Drones",
   "doi": "10.3390/drones7020139",
-  "cited": 16,
+  "cited": 17,
   "terms": [
    "IoT and Edge/Fog Computing",
    "computation offloading",
@@ -8080,12 +7827,12 @@
    "edge servers",
    "cloud server"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W4320913770",
@@ -8116,7 +7863,6 @@
    "control plane security",
    "SDN architecture"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -8141,7 +7887,6 @@
    "temporal information extraction",
    "pre-trained language model fine-tuning"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -8177,7 +7922,6 @@
    "ADASYN",
    "logistic regression"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -8206,7 +7950,6 @@
    "UAV path planning",
    "wireless sensor networks"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -8239,7 +7982,6 @@
    "gradient boosting",
    "cardiovascular prognosis"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -8269,7 +8011,6 @@
    "environmental sensor data",
    "multivariate analysis"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -8299,7 +8040,6 @@
    "cell images",
    "YOLOv5 comparison"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -8332,42 +8072,8 @@
    "storage performance evaluation",
    "data redundancy"
   ],
-  "cats": [],
   "prof": [
    "noh-seoyoung"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4386844013",
-  "title": "A Study of the Measurement Conditions for Determining Liquid Entry Pressure Values for Hydrophobic Membranes",
-  "year": 2023,
-  "date": "2023-01-01",
-  "authors": [
-   "Minsu Pyo",
-   "Dongyeon Kim",
-   "Hyung‐Soo Kim",
-   "Sanghyun Jeong",
-   "Euijong Lee"
-  ],
-  "venue": "SSRN Electronic Journal",
-  "doi": "10.2139/ssrn.4576006",
-  "cited": 0,
-  "terms": [
-   "Membrane Separation Technologies",
-   "liquid entry pressure",
-   "hydrophobic membranes",
-   "water permeation",
-   "measurement conditions",
-   "pore size",
-   "membrane hydrophobicity",
-   "membrane thickness",
-   "water resistance"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -8399,7 +8105,6 @@
    "data preprocessing",
    "artificial neural networks"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -8433,42 +8138,8 @@
    "web-based decision support",
    "clinical decision support"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4384786750",
-  "title": "A Mechanistic Study of Liquid Entry Pressure Estimation for Hydrophobic Membranes: Values and Operating Conditions",
-  "year": 2023,
-  "date": "2023-01-01",
-  "authors": [
-   "Minsu Pyo",
-   "Dongyeon Kim",
-   "Hyung‐Soo Kim",
-   "Sanghyun Jeong",
-   "Euijong Lee"
-  ],
-  "venue": "SSRN Electronic Journal",
-  "doi": "10.2139/ssrn.4514062",
-  "cited": 0,
-  "terms": [
-   "Membrane Separation Technologies",
-   "liquid entry pressure",
-   "hydrophobic membranes",
-   "water permeation",
-   "membrane pore size",
-   "membrane hydrophobicity",
-   "membrane thickness",
-   "water penetration resistance",
-   "measurement conditions"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -8495,7 +8166,6 @@
    "market frictions",
    "risk appetite"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -8529,43 +8199,6 @@
    "meat quality",
    "meat consumption"
   ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4327808552",
-  "title": "Effect of Photothermal Layer Fabrication Technique on Membrane Distillation Performance: Electrospinning vs Electrospraying",
-  "year": 2023,
-  "date": "2023-01-01",
-  "authors": [
-   "Sanghyun Jeong",
-   "Yumin Oh",
-   "Jae‐Hyuk Kim",
-   "Euijong Lee",
-   "Junggil Lee"
-  ],
-  "venue": "SSRN Electronic Journal",
-  "doi": "10.2139/ssrn.4392383",
-  "cited": 0,
-  "terms": [
-   "Membrane Separation Technologies",
-   "membrane distillation",
-   "photothermal effect",
-   "gold nanoparticles",
-   "electrospinning",
-   "electrospraying",
-   "temperature polarization",
-   "PVDF membranes",
-   "organic fouling",
-   "laser irradiation",
-   "desalination",
-   "wastewater treatment"
-  ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -8592,7 +8225,6 @@
    "attention mechanism",
    "regularization"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -8624,7 +8256,6 @@
    "class imbalance",
    "discriminative representations"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -8654,7 +8285,6 @@
    "data augmentation",
    "quality control"
   ],
-  "cats": [],
   "prof": [
    "yoo-kwanhee"
   ],
@@ -8685,7 +8315,6 @@
    "food safety information",
    "multi-level model"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -8717,7 +8346,6 @@
    "hardware compatibility",
    "IoT application development"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -8748,7 +8376,6 @@
    "graph embedding",
    "K-means clustering"
   ],
-  "cats": [],
   "prof": [
    "kang-yoonsuk"
   ],
@@ -8778,7 +8405,6 @@
    "CARLA simulator",
    "key sensitivity analysis"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -8812,7 +8438,6 @@
    "network attacks",
    "software-defined networking"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -8840,7 +8465,6 @@
    "parameter efficiency",
    "model comparison"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -8869,7 +8493,6 @@
    "smart agriculture",
    "image classification"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -8900,7 +8523,6 @@
    "knowledge discovery",
    "NP-completeness"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -8930,7 +8552,6 @@
    "mechanism of action",
    "cancer cell lines"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -8962,7 +8583,6 @@
    "Open vSwitch",
    "network security"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -8994,7 +8614,6 @@
    "transmission delay",
    "deadline miss ratio"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -9022,7 +8641,6 @@
    "photovoltaic power forecasting",
    "vertical partitioning"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -9053,7 +8671,6 @@
    "word embeddings",
    "online reviews"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -9078,7 +8695,6 @@
    "test quality",
    "software maintainability"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -9107,7 +8723,6 @@
    "public safety",
    "violation detection"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -9137,7 +8752,6 @@
    "graph convolutional networks",
    "RDKit"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -9166,7 +8780,6 @@
    "code classification",
    "transformer models"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -9199,7 +8812,6 @@
    "safety distance",
    "response time"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -9228,7 +8840,6 @@
    "denoising autoencoder",
    "neural network ensembles"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -9254,7 +8865,6 @@
    "data visualization",
    "big data challenges"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -9284,7 +8894,6 @@
    "service scenarios",
    "public survey"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -9312,7 +8921,6 @@
    "reward function design",
    "multi-core performance"
   ],
-  "cats": [],
   "prof": [
    "jo-heeseung"
   ],
@@ -9343,7 +8951,6 @@
    "decision-making",
    "functional control"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -9368,7 +8975,6 @@
    "hazard analysis",
    "safety-critical systems"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -9411,7 +9017,6 @@
    "mitochondrial abundance",
    "thermoregulation"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -9453,7 +9058,6 @@
    "prostatectomy",
    "salpingo-oophorectomy"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -9481,7 +9085,6 @@
    "conversion loss",
    "resource-constrained environments"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -9513,7 +9116,6 @@
    "ultra-reliable low-latency communication",
    "Internet of Things"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -9541,7 +9143,6 @@
    "mobile device mobility",
    "battery-powered sensors"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -9567,7 +9168,6 @@
    "resource-constrained IoT",
    "energy efficiency"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -9597,7 +9197,6 @@
    "abnormal event detection",
    "ShanghaiTech dataset"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -9626,7 +9225,6 @@
    "runtime adaptation",
    "requirements verification"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -9657,7 +9255,6 @@
    "power efficiency",
    "energy consumption"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -9686,7 +9283,6 @@
    "fast inference",
    "feature redundancy"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -9713,7 +9309,6 @@
    "entity summarization",
    "fuzzy formal concept analysis"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -9744,7 +9339,6 @@
    "test suite prioritization",
    "test suite reduction"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -9768,7 +9362,6 @@
    "mutation testing",
    "software testing"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -9796,7 +9389,6 @@
    "word embeddings",
    "semantic similarity"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -9827,62 +9419,8 @@
    "discharge planning",
    "healthcare cost reduction"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4285409973",
-  "title": "Korean 'ci(yo)' and 'canha(yo)' as conditional markers and their meaning change process",
-  "year": 2022,
-  "date": "2022-03-31",
-  "authors": [
-   "Euijong Lee"
-  ],
-  "venue": "The Institute of Humanities",
-  "doi": "10.46270/ssw.45.1",
-  "cited": 0,
-  "terms": [
-   "Syntax, Semantics, Linguistic Variation",
-   "conditionals",
-   "semantic change",
-   "rising intonation",
-   "discourse topic",
-   "genericity",
-   "Korean grammar"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4225730425",
-  "title": "Polysemy and the meaning extension mechanisms of Korean verbs ‘phyeta’ and ‘phyelchita’",
-  "year": 2022,
-  "date": "2022-03-31",
-  "authors": [
-   "Euijong Lee"
-  ],
-  "venue": "The Journal of Korean Studies",
-  "doi": "10.17790/kors.2022.3.80.97",
-  "cited": 0,
-  "terms": [
-   "Syntax, Semantics, Linguistic Variation",
-   "polysemy",
-   "semantic extension",
-   "Korean verbs",
-   "abstract meaning",
-   "semantic networks"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -9912,7 +9450,6 @@
    "Internet of Things",
    "hardware acceleration"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung",
    "kim-bongjae"
@@ -9941,7 +9478,6 @@
    "EvoSuite",
    "Defects4J"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -9976,7 +9512,6 @@
    "neural network model",
    "computational complexity reduction"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -10001,7 +9536,6 @@
    "OpenStack",
    "cloud performance evaluation"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -10029,7 +9563,6 @@
    "low quality factor",
    "8 GHz band"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -10057,7 +9590,6 @@
    "safety networks",
    "simulation-based assessment"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -10101,7 +9633,6 @@
    "fumarate salts",
    "acid-related diseases"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -10133,7 +9664,6 @@
    "Android application",
    "Arduino"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -10163,7 +9693,6 @@
    "production planning",
    "scheduling under uncertainty"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -10200,7 +9729,6 @@
    "policy verification",
    "data center networks"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -10235,7 +9763,6 @@
    "smart manufacturing",
    "big data"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -10267,45 +9794,8 @@
    "5G testbed",
    "beamforming"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4313060995",
-  "title": "Effect of Fabrication Technique on Membrane Distillation Performance of Photothermal Membrane: Electrospinning vs Electrospraying",
-  "year": 2022,
-  "date": "2022-01-01",
-  "authors": [
-   "Sanghyun Jeong",
-   "Yumin Oh",
-   "Jae‐Hyuk Kim",
-   "Euijong Lee",
-   "Junggil Lee"
-  ],
-  "venue": "SSRN Electronic Journal",
-  "doi": "10.2139/ssrn.4295175",
-  "cited": 0,
-  "terms": [
-   "Membrane Separation Technologies",
-   "membrane distillation",
-   "photothermal effect",
-   "gold nanoparticles",
-   "electrospinning",
-   "electrospraying",
-   "PVDF membranes",
-   "temperature polarization",
-   "membrane fouling",
-   "plasmonic effect",
-   "desalination",
-   "laser irradiation"
-  ],
-  "cats": [],
-  "prof": [
-   "lee-euijong"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -10334,7 +9824,6 @@
    "item ranking",
    "sparsity"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -10363,7 +9852,6 @@
    "explainable AI",
    "ordinary least squares"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -10388,7 +9876,7 @@
   ],
   "venue": "CrystEngComm",
   "doi": "10.1039/d2ce00153e",
-  "cited": 15,
+  "cited": 16,
   "terms": [
    "Crystallography and molecular interactions",
    "pharmaceutical cocrystals",
@@ -10396,12 +9884,12 @@
    "artificial neural networks",
    "drug discovery"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W4287854589",
@@ -10425,7 +9913,6 @@
    "low-resource languages",
    "multilingual language models"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -10454,7 +9941,6 @@
    "deep learning",
    "PDF"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -10482,7 +9968,6 @@
    "coffee quality",
    "automated defect classification"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -10513,7 +9998,6 @@
    "smart manufacturing",
    "low-latency communication"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -10541,7 +10025,6 @@
    "energy efficiency",
    "biological plausibility"
   ],
-  "cats": [],
   "prof": [
    "lee-keonmyung"
   ],
@@ -10574,7 +10057,6 @@
    "raw material composition",
    "metalworking"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -10611,7 +10093,6 @@
    "artemisinin resistance",
    "chloroquine resistance"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -10643,7 +10124,6 @@
    "chauffeurs",
    "epoch"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -10673,7 +10153,6 @@
    "chauffeurs",
    "epoch"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -10702,7 +10181,6 @@
    "search cost reduction",
    "performance tuning"
   ],
-  "cats": [],
   "prof": [
    "jo-heeseung"
   ],
@@ -10733,7 +10211,6 @@
    "ISO 26262",
    "IEC 61508"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -10759,7 +10236,6 @@
    "Software Testing and Debugging Techniques",
    "SAP HANA"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -10789,7 +10265,6 @@
    "JFreeChart",
    "Defects4J"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -10817,7 +10292,6 @@
    "multi-class image classification",
    "deep convolutional neural networks"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -10848,7 +10322,6 @@
    "class imbalance",
    "data preprocessing"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -10882,7 +10355,6 @@
    "machine learning",
    "Daejeon"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -10912,7 +10384,6 @@
    "mobile device tracking",
    "ensemble learning"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -10946,7 +10417,6 @@
    "healthcare data protection",
    "research taxonomy"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -10979,7 +10449,6 @@
    "deception tactics",
    "prosodic features"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -11008,7 +10477,6 @@
    "multi-criteria decision making",
    "group recommendation"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -11031,7 +10499,6 @@
    "Software Testing and Debugging Techniques",
    "mutation testing"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -11064,7 +10531,6 @@
    "Coffea canephora",
    "misclassification analysis"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -11101,7 +10567,6 @@
    "storage scalability",
    "data redundancy"
   ],
-  "cats": [],
   "prof": [
    "noh-seoyoung"
   ],
@@ -11132,7 +10597,6 @@
    "RDF data",
    "information overload"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -11165,7 +10629,6 @@
    "cluster-based networks",
    "TRACS"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -11198,7 +10661,6 @@
    "music recommendation",
    "movie recommendation"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -11233,7 +10695,6 @@
    "hyperparameter optimization",
    "two-year follow-up"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -11262,7 +10723,6 @@
    "product quantity",
    "furnace operation optimization"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee",
@@ -11300,7 +10760,6 @@
    "news effects",
    "South Korea"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -11329,7 +10788,6 @@
    "model parameter size",
    "error probability"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -11362,7 +10820,6 @@
    "recommendation accuracy",
    "recommender systems"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -11394,7 +10851,6 @@
    "product reviews",
    "fine-tuning"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -11423,7 +10879,6 @@
    "cooperative driving",
    "connected vehicles"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -11454,7 +10909,6 @@
    "drug screening",
    "personalized medicine"
   ],
-  "cats": [],
   "prof": [
    "jo-kyuri"
   ],
@@ -11482,7 +10936,6 @@
    "multibeam antenna",
    "aircraft characteristics"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -11510,7 +10963,6 @@
    "energy efficiency",
    "real-time constraints"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -11529,19 +10981,19 @@
   ],
   "venue": "ACM Symposium on Applied Computing",
   "doi": "10.1145/3412841.3441980",
-  "cited": 12,
+  "cited": 13,
   "terms": [
    "Human Pose and Action Recognition",
    "mobile application",
    "human pose estimation",
    "occlusion handling"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W3134005049",
@@ -11563,7 +11015,6 @@
    "pelvic tilt",
    "feature selection"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -11589,7 +11040,6 @@
    "connected vehicles",
    "vehicle platooning"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -11618,7 +11068,6 @@
    "smartphone sensing",
    "user-centered services"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -11651,7 +11100,6 @@
    "DBSCAN",
    "face images"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -11679,7 +11127,6 @@
    "C programs",
    "structural coverage"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -11714,7 +11161,6 @@
    "feature selection",
    "QSPR"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -11749,7 +11195,6 @@
    "throughput",
    "resource provisioning"
   ],
-  "cats": [],
   "prof": [
    "noh-seoyoung"
   ],
@@ -11786,7 +11231,6 @@
    "kidney transplantation",
    "anesthesia duration"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -11815,7 +11259,6 @@
    "scalability",
    "interoperability"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -11846,7 +11289,6 @@
    "parking lots",
    "driving experience"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -11879,7 +11321,6 @@
    "smartphone users",
    "mobile network infrastructure"
   ],
-  "cats": [],
   "prof": [
    "park-soochang"
   ],
@@ -11908,7 +11349,6 @@
    "online learning platforms",
    "online learning"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -11939,7 +11379,6 @@
    "robust clustering",
    "non-convex clusters"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -11970,7 +11409,6 @@
    "branch coverage",
    "test suite completeness"
   ],
-  "cats": [],
   "prof": [
    "hong-shin"
   ],
@@ -12001,7 +11439,6 @@
    "query performance optimization",
    "multi-attribute data"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -12033,7 +11470,6 @@
    "deep learning",
    "intelligent transportation systems"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -12062,7 +11498,6 @@
    "aircraft characteristics",
    "wireless relay"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -12081,7 +11516,7 @@
   ],
   "venue": "IEEE Access",
   "doi": "10.1109/access.2021.3099795",
-  "cited": 59,
+  "cited": 60,
   "terms": [
    "Imbalanced Data Classification Techniques",
    "major adverse cardiovascular events",
@@ -12094,12 +11529,12 @@
    "cardiovascular risk prediction",
    "early diagnosis"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W3183929524",
@@ -12122,7 +11557,6 @@
    "vehicle platooning",
    "road safety"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -12154,7 +11588,6 @@
    "network attack defense",
    "network topology metrics"
   ],
-  "cats": [],
   "prof": [
    "kim-jinwoo"
   ],
@@ -12185,7 +11618,6 @@
    "data quality",
    "machine learning training data"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -12219,7 +11651,6 @@
    "logistic regression",
    "risk prediction"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -12249,7 +11680,6 @@
    "LSTM",
    "agricultural commodity prices"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz",
    "yoo-kwanhee"
@@ -12284,7 +11714,6 @@
    "Internet of Things",
    "humidity monitoring"
   ],
-  "cats": [],
   "prof": [
    "lee-jongyun"
   ],
@@ -12312,7 +11741,6 @@
    "visual feature extraction",
    "spatio-temporal features"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -12345,7 +11773,6 @@
    "smart cities",
    "home automation"
   ],
-  "cats": [],
   "prof": [
    "lee-euijong"
   ],
@@ -12370,7 +11797,6 @@
    "saliency maps",
    "complex textures"
   ],
-  "cats": [],
   "prof": [
    "cheoi-kyungjoo"
   ],
@@ -12400,7 +11826,6 @@
    "air pollution",
    "machine learning prediction"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -12429,7 +11854,6 @@
    "human action recognition",
    "video surveillance"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -12455,7 +11879,6 @@
    "error propagation",
    "Yelp reviews"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],
@@ -12484,7 +11907,6 @@
    "wireless channel access",
    "medium access control"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -12519,7 +11941,6 @@
    "path loss",
    "network throughput"
   ],
-  "cats": [],
   "prof": [
    "jo-ohyun"
   ],
@@ -12550,7 +11971,6 @@
    "K-means clustering",
    "principal component analysis"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -12577,7 +11997,6 @@
    "interconnected systems",
    "system malfunction"
   ],
-  "cats": [],
   "prof": [
    "hong-jangeui"
   ],
@@ -12607,7 +12026,6 @@
    "knowledge reduction",
    "invariance theorem"
   ],
-  "cats": [],
   "prof": [
    "nasridinov-aziz"
   ],
@@ -12638,7 +12056,6 @@
    "deep learning",
    "execution time reduction"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -12673,7 +12090,6 @@
    "crime prevention",
    "traffic surveillance cameras"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -12703,7 +12119,6 @@
    "recurrent neural networks",
    "long short-term memory"
   ],
-  "cats": [],
   "prof": [
    "kim-bongjae"
   ],
@@ -12746,7 +12161,6 @@
    "clinical decision support",
    "diagnostic accuracy"
   ],
-  "cats": [],
   "prof": [
    "jeong-youngseob"
   ],

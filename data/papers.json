@@ -4283,7 +4283,7 @@
   ],
   "venue": "Artificial Intelligence Review",
   "doi": "10.1007/s10462-024-11014-8",
-  "cited": 78,
+  "cited": 79,
   "terms": [
    "Adversarial Robustness in Machine Learning",
    "adversarial attacks",
@@ -4298,7 +4298,8 @@
    "hong-jangeui"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W4404535828",
@@ -6030,7 +6031,7 @@
   ],
   "venue": "Sensors",
   "doi": "10.3390/s24010292",
-  "cited": 7,
+  "cited": 8,
   "terms": [
    "Multimodal Machine Learning Applications",
    "video surveillance",
@@ -6046,7 +6047,8 @@
    "cheoi-kyungjoo"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W4405838437",
@@ -6258,36 +6260,6 @@
   ],
   "prof": [
    "jo-ohyun"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4403232260",
-  "title": "Energy-Efficient Device-to-Device Communication Optimization for Autonomous Mobile Robots Over Industrial Iot Networks",
-  "year": 2024,
-  "date": "2024-01-01",
-  "authors": [
-   "Sang‐Hoon Lee",
-   "Soochang Park"
-  ],
-  "venue": "SSRN Electronic Journal",
-  "doi": "10.2139/ssrn.4979730",
-  "cited": 0,
-  "terms": [
-   "IoT and Edge/Fog Computing",
-   "device-to-device communication",
-   "autonomous mobile robots",
-   "Industrial Internet of Things",
-   "energy efficiency",
-   "Nash equilibrium",
-   "data rate maximization",
-   "energy consumption",
-   "robot mobility",
-   "industrial automation"
-  ],
-  "prof": [
-   "park-soochang"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -8140,34 +8112,6 @@
   ],
   "prof": [
    "lee-jongyun"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
-  "id": "W4380354476",
-  "title": "Risk-Averse Reinforcement Learning for Portfolio Optimization",
-  "year": 2023,
-  "date": "2023-01-01",
-  "authors": [
-   "Bayaraa Enkhsaikhan",
-   "Ohyun Jo"
-  ],
-  "venue": "SSRN Electronic Journal",
-  "doi": "10.2139/ssrn.4474208",
-  "cited": 0,
-  "terms": [
-   "Risk and Portfolio Optimization",
-   "portfolio optimization",
-   "Bayesian neural networks",
-   "risk assessment",
-   "uncertainty estimation",
-   "investment decision-making",
-   "market frictions",
-   "risk appetite"
-  ],
-  "prof": [
-   "jo-ohyun"
   ],
   "added_at": "2026-10-28",
   "status": "normal"
@@ -10131,35 +10075,6 @@
   "status": "normal"
  },
  {
-  "id": "W3217191377",
-  "title": "DeepGuard: A Framework for Safeguarding Autonomous Driving Systems from Inconsistent Behavior",
-  "year": 2021,
-  "date": "2021-11-18",
-  "authors": [
-   "Manzoor Hussain",
-   "Nazakat Ali",
-   "Jang‐Eui Hong"
-  ],
-  "venue": "arXiv (Cornell University)",
-  "doi": "10.48550/arxiv.2111.09533",
-  "cited": 0,
-  "terms": [
-   "Autonomous Vehicle Technology and Safety",
-   "autonomous driving safety",
-   "anomaly detection",
-   "autoencoder reconstruction error",
-   "time series analysis",
-   "healing strategies",
-   "chauffeurs",
-   "epoch"
-  ],
-  "prof": [
-   "hong-jangeui"
-  ],
-  "added_at": "2026-10-28",
-  "status": "normal"
- },
- {
   "id": "W3215882704",
   "title": "An Automatic Parameter Optimizing Scheme for RocksDB",
   "year": 2021,
@@ -10552,7 +10467,7 @@
   ],
   "venue": "Electronics",
   "doi": "10.3390/electronics10121471",
-  "cited": 15,
+  "cited": 16,
   "terms": [
    "Advanced Data Storage Technologies",
    "distributed file systems",
@@ -10571,7 +10486,8 @@
    "noh-seoyoung"
   ],
   "added_at": "2026-10-28",
-  "status": "normal"
+  "status": "normal",
+  "source": "openalex"
  },
  {
   "id": "W3176140580",

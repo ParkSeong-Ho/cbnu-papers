@@ -1,7 +1,7 @@
-"""M3 카테고리 초안 검토 페이지를 만든다.
+"""카테고리 검토 페이지를 만든다.
 
-docs/m3-categories.draft.json + data/papers.json → docs/m3-categories.html (외부 요청 없는 HTML 1개)
-초안 JSON을 고친 뒤 다시 실행하면 태깅 결과가 갱신된다.
+data/professors.json + data/papers.json → docs/m3-categories.html (외부 요청 없는 HTML 1개)
+professors.json 의 categories 를 고친 뒤 다시 실행하면 태깅 결과가 갱신된다.
 
     python3 scripts/review_categories.py
 """
@@ -11,24 +11,21 @@ from pathlib import Path
 from fetch_papers import tag
 
 ROOT = Path(__file__).resolve().parent.parent
-DRAFT = ROOT / "docs" / "m3-categories.draft.json"
 OUT = ROOT / "docs" / "m3-categories.html"
 TOKENS = Path("/Users/se9078/my_hoop_things/notion-design-guide/tokens.css")
 
 
 def build():
-    draft = json.loads(DRAFT.read_text())
     profs = json.loads((ROOT / "data" / "professors.json").read_text())
     papers = json.loads((ROOT / "data" / "papers.json").read_text())
     rows = []
     for pr in sorted(profs, key=lambda p: p["order"]):
-        d = draft.get(pr["id"], {"emoji": "📄", "summary": "", "categories": []})
         mine = [p for p in papers if pr["id"] in p["prof"]]
         rows.append({
             "id": pr["id"], "name": pr["name"], "dept": pr["dept"], "field": pr["field"],
-            "emoji": d["emoji"], "summary": d["summary"], "categories": d["categories"],
+            "emoji": pr.get("emoji", "📄"), "summary": pr.get("summary", ""), "categories": pr["categories"],
             "papers": [{"t": p["title"], "y": p["year"], "v": p["venue"], "doi": p["doi"],
-                        "c": p["cited"], "tags": tag(p, d)} for p in mine],
+                        "c": p["cited"], "tags": tag(p, pr)} for p in mine],
         })
     data = json.dumps(rows, ensure_ascii=False).replace("</", "<\\/")
     html = TEMPLATE.replace("/*TOKENS*/", TOKENS.read_text()).replace("/*DATA*/", data)
@@ -41,7 +38,7 @@ TEMPLATE = r"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>카테고리 초안 검토</title>
+<title>카테고리 검토</title>
 <style>
 /*TOKENS*/
 * { box-sizing: border-box; }
@@ -128,7 +125,7 @@ a { color: inherit; text-decoration: underline; text-decoration-color: var(--c-t
 </head>
 <body>
 <div class="wrap">
-  <h1>🏷️ 연구주제 카테고리 초안</h1>
+  <h1>🏷️ 연구주제 카테고리</h1>
   <div class="sec" id="sub"></div>
 
   <div class="callout"><span>💡</span><div>

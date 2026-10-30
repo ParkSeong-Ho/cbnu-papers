@@ -24,7 +24,7 @@ def paper(**kw):
 
 
 PROF = {"id": "p1", "openalex": ["A1"], "categories": [
-    {"key": "fuzz", "match": ["fuzz"]}, {"key": "db", "match": ["database"]}]}
+    {"key": "fuzz", "match": ["fuzz*"]}, {"key": "db", "match": ["database"]}]}
 
 
 class KeepWork(unittest.TestCase):
@@ -57,6 +57,14 @@ class Tagging(unittest.TestCase):
         self.assertEqual(f.tag(p, PROF), ["fuzz"])
         self.assertEqual(f.tag(paper(title="Nothing here"), PROF), ["fuzz"])  # 주제어 "Fuzzing"
         self.assertEqual(f.tag(paper(title="x"), {"categories": []}), [])
+
+
+class Matching(unittest.TestCase):
+    def test_word_boundary_and_stems(self):
+        prof = {"categories": [{"key": "edge", "match": ["edge"]}, {"key": "fz", "match": ["fuzz*"]}]}
+        self.assertEqual(f.tag(paper(title="Knowledge distillation"), {"categories": prof["categories"][:1]}), [])
+        self.assertEqual(f.tag(paper(title="Edges of IoT"), {"categories": prof["categories"][:1]}), ["edge"])
+        self.assertIn("fz", f.tag(paper(title="Refining Fuzzed Inputs"), prof))
 
 
 class Merge(unittest.TestCase):
@@ -92,6 +100,27 @@ class Merge(unittest.TestCase):
         out = f.merge([], {"p1": [pre, pub]}, "2026-10-26", baseline={"p1", "p2"})
         self.assertEqual(len(out), 1)
         self.assertEqual((out[0]["venue"], out[0]["cited"]), ("ICSE", 9))
+
+    def test_preprint_matches_published_with_other_year_and_spelling(self):
+        pre = paper(wid="W1", title="DeepGuard: A Framework for Safeguarding Driving from Inconsistent Behavior",
+                    venue="arXiv (Cornell University)", year=2021, doi="10.48550/arxiv.1")
+        pub = paper(wid="W2", title="DeepGuard: a framework for safeguarding driving from inconsistent behaviour",
+                    venue="Automated Software Engineering", year=2022, doi="10.1007/x")
+        out = f.merge([], {"p1": [pre, pub]}, "2026-10-26", baseline={"p1"})
+        self.assertEqual(len(out), 1)
+        self.assertEqual((out[0]["id"], out[0]["venue"]), ("W1", "Automated Software Engineering"))
+
+    def test_two_published_versions_stay_separate(self):
+        a = paper(wid="W1", title="Learning-based Mutant Reduction", venue="ICST", year=2022)
+        b = paper(wid="W2", title="Learning-based mutant reduction", venue="STVR", year=2021)
+        self.assertEqual(len(f.merge([], {"p1": [a, b]}, "2026-10-26", baseline={"p1"})), 2)
+
+    def test_existing_duplicates_are_folded_keeping_first_seen(self):
+        a = dict(paper(wid="W1", venue="SSRN Electronic Journal", year=2023), prof=["p1"], added_at="2026-10-01", status="normal")
+        b = dict(paper(wid="W2", venue="ICT Express", year=2024), prof=["p1"], added_at="2026-10-20", status="new")
+        out = f.merge([a, b], {}, "2026-10-26", baseline=set())
+        self.assertEqual(len(out), 1)
+        self.assertEqual((out[0]["id"], out[0]["added_at"], out[0]["venue"]), ("W1", "2026-10-01", "ICT Express"))
 
     def test_coauthored_by_two_professors(self):
         out = f.merge([], {"p1": [paper()], "p2": [paper()]}, "2026-10-26", baseline={"p1", "p2"})

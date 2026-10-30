@@ -38,5 +38,15 @@
    "jo-kyuri": 1
   },
   "errors": []
+ },
+ {
+  "run_at": "2026-10-30T05:28:19+00:00",
+  "today": "2026-10-30",
+  "baseline": [],
+  "total": 404,
+  "new": 0,
+  "removed": 3,
+  "by_prof": {},
+  "errors": []
  }
 ]

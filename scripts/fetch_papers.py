@@ -12,6 +12,7 @@
 """
 import argparse
 import datetime as dt
+import difflib
 import json
 import re
 import sys
@@ -29,6 +30,8 @@ CBNU = "I163753206"
 CS_FIELD = "fields/17"
 SINCE = "2021-01-01"
 NEW_DAYS = 7
+DROP_GUARD = 0.5   # 한 교수의 수집 결과가 기존의 절반 미만이면 API 이상으로 보고 이번 결과를 버린다
+FUZZY = 0.9        # 프리프린트-정식본 제목 유사도 기준
 KEEP_RUNS = 52
 SELECT = ",".join([
     "id", "doi", "title", "publication_year", "publication_date", "type",
@@ -99,10 +102,20 @@ def to_paper(work):
     }
 
 
+def term_re(m):
+    """match 키워드 → 정규식. 단어 단위로 찾는다 (edge 가 knowledge 에 걸리지 않게).
+    끝에 * 를 붙이면 그 글자로 시작하는 단어 전부: "fuzz*" → fuzz, fuzzing, fuzzed. 아니면 복수형(s, es)까지."""
+    m = m.lower().strip()
+    if m.endswith("*"):
+        return re.compile(r"\b" + re.escape(m[:-1]))
+    return re.compile(r"\b" + re.escape(m) + r"(?:s|es)?\b")
+
+
 def tag(paper, prof):
     """교수 카테고리의 match 키워드가 제목·주제어에 걸리면 그 카테고리 key 목록. (build.py 에서 사용)"""
     text = " ".join([paper["title"]] + paper.get("terms", [])).lower()
-    return [c["key"] for c in prof.get("categories", []) if any(m.lower() in text for m in c.get("match", []))]
+    return [c["key"] for c in prof.get("categories", [])
+            if any(term_re(m).search(text) for m in c.get("match", []))]
 
 
 def better(a, b):
@@ -118,10 +131,13 @@ def merge(existing, fetched, today, baseline):
     existing: 기존 papers 목록
     fetched:  {prof_id: [paper, ...]}  수집에 성공한 교수만 들어 있다
     같은 논문 판정: DOI → OpenAlex ID → (정규화 제목 + 연도)
+                   → 한쪽이 프리프린트면 연도 ±2년, 제목 유사도 FUZZY 이상
     처음 보는 논문만 added_at=today, status=new. 단 baseline(교수 id 집합)에 든 교수의 논문은 normal.
     fetched 에 있는 교수인데 이번 결과에 없는 논문은 그 교수를 prof 에서 뺀다. prof 가 비면 논문을 지운다.
+    레코드의 id 는 처음 본 판본의 OpenAlex ID 로 고정한다 (외부에서 이 id 로 연결하므로).
     """
     by_key = {}
+    buckets = {}
     out = []
 
     def keys(p):
@@ -134,16 +150,40 @@ def merge(existing, fetched, today, baseline):
         for k in keys(p):
             if k in by_key:
                 return by_key[k]
+        t = norm_title(p["title"])
+        for c in buckets.get(t[:20], []):
+            if (is_preprint(p["venue"]) or is_preprint(c["venue"])) and abs((p["year"] or 0) - (c["year"] or 0)) <= 2 \
+                    and difflib.SequenceMatcher(None, t, norm_title(c["title"])).ratio() >= FUZZY:
+                return c
         return None
 
     def index(p):
         for k in keys(p):
             by_key[k] = p
+        b = buckets.setdefault(norm_title(p["title"])[:20], [])
+        if p not in b:
+            b.append(p)
+
+    def fold(old, new):
+        if better(old, new) is new:
+            for f in ("title", "year", "date", "authors", "venue", "doi", "terms", "source"):
+                if new.get(f):
+                    old[f] = new[f]
+        old["cited"] = max(old.get("cited", 0), new.get("cited", 0))
+        index(old)
 
     for p in existing:
-        p = dict(p)
-        out.append(p)
-        index(p)
+        p = dict(p, prof=list(p["prof"]))
+        old = find(p)
+        if old is None:
+            out.append(p)
+            index(p)
+            continue
+        # 기존 목록 안의 중복 (판정 규칙이 바뀐 경우): 먼저 발견한 쪽의 날짜·상태를 남긴다
+        if p["added_at"] < old["added_at"]:
+            old["added_at"], old["status"], old["id"] = p["added_at"], p["status"], p["id"]
+        old["prof"] += [q for q in p["prof"] if q not in old["prof"]]
+        fold(old, p)
 
     matched = {pid: set() for pid in fetched}
     for prof_id, papers in fetched.items():
@@ -158,14 +198,9 @@ def merge(existing, fetched, today, baseline):
                 index(rec)
                 matched[prof_id].add(id(rec))
                 continue
-            keep = better(old, new)
-            for f in ("id", "title", "year", "date", "authors", "venue", "doi", "terms", "source"):
-                if keep is new and new.get(f):
-                    old[f] = new[f]
-            old["cited"] = max(old.get("cited", 0), new.get("cited", 0))
+            fold(old, new)
             if prof_id not in old["prof"]:
                 old["prof"].append(prof_id)
-            index(old)
             matched[prof_id].add(id(old))
     for p in out:
         p["prof"] = [q for q in p["prof"] if q not in matched or id(p) in matched[q]]
@@ -249,6 +284,10 @@ def main(argv=None):
             errors.append({"prof": prof["id"], "error": f"{type(e).__name__}: {e}"})
             continue
         papers = [to_paper(w) for w in works if keep_work(w, prof)]
+        had = sum(prof["id"] in p["prof"] for p in existing)
+        if had >= 5 and len(papers) < had * DROP_GUARD:
+            errors.append({"prof": prof["id"], "error": f"수집 결과 급감 {had}→{len(papers)}편, 이번 결과 무시"})
+            continue
         fetched[prof["id"]] = papers
         print(f"{prof['id']:<18} {len(works):>4} 받음 → {len(papers):>4} 채택", file=sys.stderr)
 

@@ -82,18 +82,23 @@ def keep_work(work, prof):
     return True
 
 
+def clean(s):
+    """앞뒤 공백과 BOM(U+FEFF) 제거. OpenAlex 저자명에 가끔 섞여 온다."""
+    return (s or "").replace("\ufeff", "").strip()
+
+
 def to_paper(work):
     loc = work.get("primary_location") or {}
-    venue = (loc.get("source") or {}).get("display_name") or ""
+    venue = clean((loc.get("source") or {}).get("display_name"))
     doi = (work.get("doi") or "").replace("https://doi.org/", "").lower()
     topics = [(work.get("primary_topic") or {}).get("display_name") or ""]
     keywords = [k.get("display_name", "") for k in work.get("keywords") or []]
     return {
         "id": short_id(work["id"]),
-        "title": work["title"].strip(),
+        "title": clean(work["title"]),
         "year": work.get("publication_year"),
         "date": work.get("publication_date"),
-        "authors": [(a.get("author") or {}).get("display_name", "") for a in work.get("authorships", [])],
+        "authors": [clean((a.get("author") or {}).get("display_name")) for a in work.get("authorships", [])],
         "venue": venue,
         "doi": doi,
         "cited": work.get("cited_by_count", 0),

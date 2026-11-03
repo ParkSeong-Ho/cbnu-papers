@@ -1,0 +1,62 @@
+/* Notion 제품 디자인 토큰. notion.site 실측 2026-10-28. 설명은 README.md */
+:root {
+  --font: ui-sans-serif, -apple-system, "system-ui", "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --c-texPri: #2c2c2b; --c-texSec: #7d7a75; --c-texTer: #a19e99;
+  --c-bacPri: #ffffff; --c-bacSec: #f9f8f7; --c-bacEle: #ffffff;
+  --ca-borPriTra: #1c13011c; --ca-butHovBac: #37352f0f;
+  --c-blue: #2383e2;
+  --sha-card: 0 4px 12px #19191907, 0 1px 2px #19191905, 0 0 0 1px var(--ca-borPriTra);
+  --sha-focus: #2383e291 0 0 0 1px inset, #2383e259 0 0 0 2px;
+  --r-lg: 10px; --r-sm: 6px;
+
+  /* 태그: 글자 TexPri / 배경 BacTerTra */
+  --tag-gray-t: #494846;   --tag-gray-b: #1c13011c;
+  --tag-brown-t: #584437;  --tag-brown-b: #7f330028;
+  --tag-orange-t: #6a4222; --tag-orange-b: #c4580034;
+  --tag-yellow-t: #655121; --tag-yellow-b: #d19c0048;
+  --tag-green-t: #2a533c;  --tag-green-b: #00602628;
+  --tag-blue-t: #264a72;   --tag-blue-b: #0076d934;
+  --tag-purple-t: #553b69; --tag-purple-b: #5c00a324;
+  --tag-pink-t: #68354e;   --tag-pink-b: #b7004e27;
+  --tag-red-t: #6d3531;    --tag-red-b: #ce18002a;
+
+  /* 강조 글자 TexSec: 라이트·다크 공통 */
+  --acc-gray: #7d7a75; --acc-brown: #9f765a; --acc-orange: #d27b2d; --acc-yellow: #cb9434; --acc-green: #50946e;
+  --acc-blue: #387dc9; --acc-purple: #9a6bb4; --acc-pink: #c14c8a; --acc-red: #cf5148;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --c-texPri: #f0efed; --c-texSec: #ada9a3; --c-texTer: #7d7a75;
+    --c-bacPri: #191919; --c-bacSec: #202020; --c-bacEle: #202020;
+    --ca-borPriTra: #ffffeb1a; --ca-butHovBac: #ffffff0e;
+    --sha-card: 0 2px 4px #19191914, 0 0 0 1px var(--ca-borPriTra);
+    --tag-gray-t: #f0efed;   --tag-gray-b: #fffceb4e;
+    --tag-brown-t: #f5ede9;  --tag-brown-b: #ffb8845d;
+    --tag-orange-t: #fbebde; --tag-orange-b: #ff8f477b;
+    --tag-yellow-t: #f9f3dc; --tag-yellow-b: #ffbc3575;
+    --tag-green-t: #e8f1ec;  --tag-green-b: #71ffaf56;
+    --tag-blue-t: #e5f2fc;   --tag-blue-b: #51a6ff7e;
+    --tag-purple-t: #f3ebf9; --tag-purple-b: #d093ff6d;
+    --tag-pink-t: #fae9f1;   --tag-pink-b: #ff85c06d;
+    --tag-red-t: #fce9e7;    --tag-red-b: #ff746986;
+  }
+}
+
+/* 수동 전환용: <html data-theme="dark"> */
+:root[data-theme="dark"] {
+  --c-texPri: #f0efed; --c-texSec: #ada9a3; --c-texTer: #7d7a75;
+  --c-bacPri: #191919; --c-bacSec: #202020; --c-bacEle: #202020;
+  --ca-borPriTra: #ffffeb1a; --ca-butHovBac: #ffffff0e;
+  --sha-card: 0 2px 4px #19191914, 0 0 0 1px var(--ca-borPriTra);
+  --tag-gray-t: #f0efed;   --tag-gray-b: #fffceb4e;
+  --tag-brown-t: #f5ede9;  --tag-brown-b: #ffb8845d;
+  --tag-orange-t: #fbebde; --tag-orange-b: #ff8f477b;
+  --tag-yellow-t: #f9f3dc; --tag-yellow-b: #ffbc3575;
+  --tag-green-t: #e8f1ec;  --tag-green-b: #71ffaf56;
+  --tag-blue-t: #e5f2fc;   --tag-blue-b: #51a6ff7e;
+  --tag-purple-t: #f3ebf9; --tag-purple-b: #d093ff6d;
+  --tag-pink-t: #fae9f1;   --tag-pink-b: #ff85c06d;
+  --tag-red-t: #fce9e7;    --tag-red-b: #ff746986;
+}

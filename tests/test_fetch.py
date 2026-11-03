@@ -51,6 +51,13 @@ class KeepWork(unittest.TestCase):
         self.assertTrue(f.keep_work(work(), prof))
 
 
+class ToPaper(unittest.TestCase):
+    def test_strips_bom_and_spaces(self):
+        w = work(title=" A Study ", authors=(("\ufeffSun Kim", ["I163753206"]),))
+        p = f.to_paper(w)
+        self.assertEqual((p["title"], p["authors"]), ("A Study", ["Sun Kim"]))
+
+
 class Tagging(unittest.TestCase):
     def test_matches_title_and_terms(self):
         p = paper(title="Directed Greybox FUZZING")
